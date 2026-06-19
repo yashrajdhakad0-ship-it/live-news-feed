@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live News Feed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>📰 Live News Feed</h1>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search news...">
+        <button id="searchBtn">Search</button>
+    </div>
+
+    <div class="categories">
+        <button class="category" data-topic="world">General</button>
+        <button class="category" data-topic="business">Business</button>
+        <button class="category" data-topic="technology">Technology</button>
+        <button class="category" data-topic="sports">Sports</button>
+        <button class="category" data-topic="health">Health</button>
+        <button class="category" data-topic="science">Science</button>
+        <button class="category" data-topic="entertainment">Entertainment</button>
+    </div>
+
+    <p id="loading"></p>
+    <p id="error"></p>
+
+    <div id="newsContainer"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
