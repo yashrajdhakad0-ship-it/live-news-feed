@@ -4,7 +4,7 @@ const newsContainer = document.getElementById("newsContainer");
 const loading = document.getElementById("loading");
 const error = document.getElementById("error");
 
-async function fetchNews(topic = "world") {
+async function fetchNews(topic = "general") {
 
     loading.textContent = "Loading...";
     error.textContent = "";
