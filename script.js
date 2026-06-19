@@ -13,7 +13,7 @@ async function fetchNews(topic = "world") {
     try {
 
         const response = await fetch(
-            `https://gnews.io/api/v4/top-headlines?country=in&lang=en&topic=${topic}&token=${API_KEY}`
+            `https://gnews.io/api/v4/top-headlines?country=in&lang=en&topic=${topic}&apikey=${API_KEY}`
         );
 
         const data = await response.json();
@@ -60,7 +60,7 @@ async function searchNews() {
     try {
 
         const response = await fetch(
-            `https://gnews.io/api/v4/search?q=${keyword}&lang=en&token=${API_KEY}`
+            `https://gnews.io/api/v4/search?q=${keyword}&lang=en&apikey=${API_KEY}`
         );
 
         const data = await response.json();
